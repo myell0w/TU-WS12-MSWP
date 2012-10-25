@@ -1,0 +1,370 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{graphicx}
+\usepackage{natbib}
+\usepackage[utf8]{inputenc}
+\usepackage{tabularx}
+\usepackage{hyperref}
+\usepackage{color}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+% \usepackage{mathptmx} % Times New Roman
+
+\setlength{\topmargin}{-0.4mm} % (1in=25.4mm)-0.4mm=25mm
+\setlength{\textheight}{243.119mm} % 297mm-40mm-10mm-(11pt=3.881mm)=
+\setlength{\oddsidemargin}{-0.4mm} % (1in=25.4mm)-0.4mm=25mm
+\setlength{\textwidth}{160mm} % 210mm-50mm=160mm
+\setlength{\headheight}{0mm}
+\setlength{\headsep}{0mm}
+\setlength{\footskip}{15mm}
+
+\providecommand*{\note}[1]{\small \textcolor{RoyalBlue}{\begin{minipage}{\textwidth}{#1}\end{minipage}}}
+
+% --------------------------------------------------------------
+
+\providecommand*{\ShortTitle}{$<$Short title$>$}
+\providecommand*{\FullTitle}{$<$Full title$>$}
+
+% --------------------------------------------------------------
+
+\title{\textbf{\sffamily\Huge \ShortTitle}\\ 
+{\textbf{\sffamily\Large \FullTitle}}
+\vspace{1cm}}
+
+\author{
+{\em 188.407: Management von Software Projekten} \vspace{1cm} \\
+Group: $<$GID$>$\bigskip \\
+$<$Author1$>$ \\ {\small $<$Matrikelnr.$>$, $<$Kennzahl$>$, \href{mailto:author1@tuwien.ac.at}{author1@tuwien.ac.at}}\\
+$<$Author2$>$ \\ {\small $<$Matrikelnr.$>$, $<$Kennzahl$>$, \href{mailto:author2@tuwien.ac.at}{author1@tuwien.ac.at}}\\
+$<$Author3$>$ \\ {\small $<$Matrikelnr.$>$, $<$Kennzahl$>$, \href{mailto:author3@tuwien.ac.at}{author1@tuwien.ac.at}}\\
+$<$Author4$>$ \\ {\small $<$Matrikelnr.$>$, $<$Kennzahl$>$, \href{mailto:author4@tuwien.ac.at}{author1@tuwien.ac.at}}\\ 
+\vspace{4cm}
+}
+
+\begin{document}
+
+\begin{titlepage}
+\maketitle
+
+\end{titlepage}
+
+% --------------------------------------------------------------
+
+\thispagestyle{empty}
+\tableofcontents
+\pagebreak
+
+\setcounter{page}{1}
+
+
+% --------------------------------------------------------------
+
+\note{
+\textbf{Formal constraints}
+\begin{itemize}
+\item	  Font: Times New Roman oder Computer Modern (\LaTeX default)
+\item    Fontsize: 11pt
+\item     Single line spacing
+\item     Margins: 2.5cm side and top/bottom
+\item     \fbox{Language: ENGLISH}
+\item    The proposal template should be filled incrementally. I.e., at the end there should be a full project proposal in a single PDF file.
+\end{itemize}
+\textbf{Available templates}
+\begin{itemize}
+\item     Proposal (mswp-proposal.tex)
+\item     Costs (costs.xls, costs.ods)
+\end{itemize}
+\textbf{Supplemental material}
+\begin{itemize}
+\item     FWF salary scheme (\href{http://www.fwf.ac.at/de/projects/personalkostensaetze.html}{http://www.fwf.ac.at/de/projects/personalkostensaetze.html})
+\item     Travel cost regulation (\href{http://www.fwf.ac.at/de/faq/reisegebuehrenvorschrift.html}{http://www.fwf.ac.at/de/faq/reisegebuehrenvorschrift.html})
+\item     Ethical issues form (ethical-issues.rtf)
+\end{itemize}
+}
+\pagebreak
+
+% --------------------------------------------------------------
+\section{Synopsis}
+\label{sect:synopsis}
+
+\note{
+\begin{itemize}
+	\item {\em Length: 1-2 pages}
+	\item Concise presentation of the scientific proposal, with particular attention to the ground-breaking nature of the research project, which will allow to assess the feasibility of the outlined scientific approach. 
+	\item WHY would you like to do WHAT, HOW would you like to do it and what are the expected RESULTS?
+	\item Short description of project idea.
+	\item Short description of problem / situation.
+	\item What makes it an interesting endeavor?
+	\item Why should somebody care?
+	\item Very short cost-benefit description (what are potential benefits that make them worth the costs of the project?).
+	\item Who are the beneficiaries of the results?
+	\item Problem classification (to which scientific area does the project belong?; is it basic or applied research?)
+	\item Constraints
+	\begin{itemize}
+		\item     The project must have an extent that demands to handle it as a project including project organization.  (No 2 person pieces; no 150 person-year efforts)
+		\item     Software development should be part of the project. (But not its only content or scientific contribution.)
+		\item     The project should be interesting and meaningful.
+		\item     {\em Your creativity is called for!!}
+	\end{itemize}
+\end{itemize}
+}
+
+% --------------------------------------------------------------
+\section{Introduction and problem description}
+\label{sect:intro}
+
+\note{
+\begin{itemize}
+	\item {\em Length: 2-3 pages}
+	\item {\bf Why?}
+	\item Introduction
+	\item Context
+	\item What is the current situation?
+	\item What is the open/unresolved problem or opportunity?
+	\item Why is it a problem?
+	\item What is unknown?
+	\item What could be improved?
+	\item Explanation of fundamental terms and basic definitions.
+\end{itemize}
+}
+
+% --------------------------------------------------------------
+\section{Project goals and deliverables}
+\label{sect:goals}
+
+\note{
+\begin{itemize}
+	\item {\em Length: 1-2 pages}
+	\item What is the goal of the project?
+	\item Research questions
+	\begin{itemize}
+		\item 	    What are the hypotheses that are to be investigated?
+		\item 	    Main hypothesis \& sub hypotheses
+	\end{itemize}
+	\item Which results should be achieved with the project?
+	\begin{itemize}
+	    	\item 	   What will be known afterwards that is not known now?
+		\item	    What will be created that does not exist now?
+	\end{itemize}
+	\item Non-goals (What will not be part of the project? What will not be done?)
+\end{itemize}
+}
+
+% --------------------------------------------------------------
+\section{Scientific relevance and innovative aspects}
+\label{sect:relevance}
+
+\note{
+\begin{itemize}
+\item {\em Length: 1-2 pages}
+\item Why is the project scientifically interesting?
+\item Did others point out that this is an open question?
+\item What are the innovative aspects that make it interesting?
+\item How could the project break new ground scientifically?
+\item To what extent are the objectives ambitious and beyond the state of the art (e.g. novel concepts and approaches or development across disciplines)?
+\end{itemize}
+}
+
+% --------------------------------------------------------------
+\section{State of the art / current knowledge}
+\label{sect:star}
+
+\note{
+\begin{itemize}
+\item {\em Length: 2-5 pages}
+\item What results and approaches have already been presented in this or related areas?
+\item Relation to the international scientific work in the field (international status of the research)
+\item Description and critical discussion of related scientific work
+\end{itemize}
+}
+
+% --------------------------------------------------------------
+\section{Method}
+\label{sect:method}
+
+\note{
+\begin{itemize}
+\item {\em Length: 2-5 pages}
+\item {\bf How?}
+\item How should the expected results be achieved?
+\item What method(s) will be applied? (e.g., empirical study, user-centered design, prototype implementation,...)
+\item Description of the methods.
+\item Justifications for chosen methods.
+\end{itemize}
+}
+
+% --------------------------------------------------------------
+\section{Detailed description of the workpackages}
+\label{sect:workplan}
+
+\note{
+\begin{itemize}
+\item {\em Length: 2-4 pages}
+\item Structuring the project into self-contained parts.
+\item Additional verbal descriptions.
+\item Work packages
+    \begin{itemize}
+    \item title
+    \item goal(s)
+    \item description
+    \item expected results
+    \item responsible person(s)
+    \item dependencies
+    \end{itemize}
+\end{itemize}
+}
+
+% --------------------------------------------------------------
+\section{Time plan (Gantt chart)}
+\label{sect:timeplan}
+
+\note{
+\begin{itemize}
+\item {\em Length: 1-2 pages}
+\item Realistic estimation of schedule based on workpackages.
+\item Including milestones (not only when but also what is to be achieved for each milestone).
+\item Generation of a Gantt chart. (Including phases, milestones, buffer times, critical areas, etc.)
+\end{itemize}
+}
+
+% --------------------------------------------------------------
+\section{Human resources / team}
+\label{sect:team}
+
+\note{
+\begin{itemize}
+\item {\em Length: 1-2 pages}
+\item Description of the team that is needed to carry out the project. (For the execution phase of the project, not the planning phase.)
+\item How many people?
+\item To what extent are individual members needed?
+\item What knowledge, skills, and experiences are needed for each member?
+\item Demonstrate that the members will be able to carry out the project successfully.
+\item Work structure
+	\begin{itemize}
+	\item     Who will lead the project?
+	\item     How do they work together?
+	\item     Management and coordination
+		\begin{itemize}
+		\item 	        What communication structures will be established? (e.g., mailing list, blog, CMS, CVS, ...)
+		\item 	        How often will meetings take place? (Who will participate?)
+		\item 	        How will the work be documented?
+		\item 	        How will information be stored and shared?
+		\end{itemize}
+	\end{itemize}
+\item Cooperations
+	\begin{itemize}
+	\item     Will external cooperators be part of the project? (e.g., other research institutions or companies)
+	\item     What is their role?
+	 \item    Why are they needed?
+	\end{itemize}
+\end{itemize}
+}
+
+% --------------------------------------------------------------
+\section{Costs}
+\label{sect:costs}
+
+\note{
+\begin{itemize}
+\item {\em Length: 2-3 pages}
+\item Rough estimation of cost in form of calculation (table(s)) + descriptive text.
+\item Justification for the personnel and non-personnel costs (equipment, material, travel and other costs)
+\item An Excel template is provided as supplementary material to support budgeting.
+\item Personnel costs
+	\begin{itemize}
+	\item     Justification for the personnel to be assigned to the project (type of position(s), description of nature of work, length and extent of involvement in the project)
+	\item     The application should include all persons who will be required for the proposed project (project lead, researchers, developers, advisory board, etc.). The available legal categories of employment are contracts of employment for full- or part-time employees (DV) and reimbursement for work on an hourly basis (GB). In addition, a part-time contract of employment (DV 50\%, ``studentische Mitarbeiter'') may be requested for people who have not yet completed a Master or Diploma program (Diplom) in the relevant subject.
+	 \item    The justification of the requested personnel should contain:
+		\begin{itemize}
+		\item 	        description of type of work;
+		\item 		        extent of involvement (part-time contracts are permitted).
+		\end{itemize}
+	\item Exact numbers of employment categories can be found on the FWF Website (\href{http://www.fwf.ac.at/de/projects/personalkostensaetze.html}{http://www.fwf.ac.at/de/projects/personalkostensaetze.html})
+	\end{itemize}
+\item Equipment costs
+	\begin{itemize}
+	\item     Indicate reasons for equipment costs. The ``scientific equipment'' category includes instruments, system components, costs for the use of software required by the project and other durable goods provided the cost per item (including VAT) exceeds EUR 1,500.00.
+	\end{itemize}
+\item Material costs
+	\begin{itemize}
+	\item     This category encompasses consumables and smaller pieces of equipment where the cost per item is below EUR 1,500.00 including VAT. The calculation of requested material costs should be justified with reference to the schedule, work plan and experimental plan. Experience with previous projects should be taken into account.
+	\end{itemize}
+\item Travel costs
+	\begin{itemize}
+	\item     Funding may be requested for the costs of project-specific travel and accommodation, field work, expeditions, etc. Applicants are to provide a detailed travel (cost) plan broken down by project participant. For brief stays, the calculation of the travel and accommodation costs should be based on the federal regulations governing travel costs (RGV). The RGV rates governing Austria and abroad may be found in the FAQs on the FWF Website (\href{http://www.fwf.ac.at/de/faq/reisegebuehrenvorschrift.html}{http://www.fwf.ac.at/de/faq/reisegebuehrenvorschrift.html}). For longer stays an appropriate and comprehensible cost plan should be prepared.
+	\end{itemize}
+\item Other costs
+	\begin{itemize}
+	\item     Independent contracts for work and services (costs for work of clearly defined scope and content assigned to individuals, provided that this is scientifically justifiable and economical)
+    	\item     Costs that cannot be included under personnel, equipment, material or travel costs, such as:
+		\begin{itemize}
+		\item         reimbursement of costs towards or for the use of research facilities, e.g. of large-scale research facilities (project-specific 'equipment time'). Applicants should obtain and submit multiple offers;
+		\item         costs for project-specific work carried out outside the applicant's research institution (e.g. for analysis work performed elsewhere, for interviews, for sample collection, for preparation of thin slices etc.). Applicants should obtain and submit multiple offers;
+		\item         honoraria for test persons;
+		\end{itemize}
+	\end{itemize}
+\end{itemize}
+}
+
+% --------------------------------------------------------------
+\section{Expected implications and risks}
+\label{sect:implication-risk}
+
+\note{
+\begin{itemize}
+\item {\em Length: 1-2 pages}
+\item Importance of the expected results for the discipline
+	\begin{itemize}
+	\item     To what extent does the proposed research address important challenges?
+	\end{itemize}
+\item Importance of the expected results for other areas
+\item What are possible risks of the project and how can they be alleviated?
+	\begin{itemize}
+	\item     What factors could lead to a failure of the project?
+	\item     Which factors or persons could support the project and increase the chance for success?
+	\item     What if important team members leave the project?
+	\end{itemize}
+\end{itemize}
+}
+
+% --------------------------------------------------------------
+\section{Ethical considerations \& security issues}
+\label{sect:ethics-security}
+
+\note{
+\begin{itemize}
+\item {\em Length: 1-2 pages}
+\item Provide a brief explanation of the ethical issue involved and how it will be dealt with appropriately.
+\item Are there any security-sensitive issues that apply to your proposal?
+\end{itemize}
+}
+
+% --------------------------------------------------------------
+% APPENDIX
+\begin{appendix}
+
+\pagebreak
+
+% --------------------------------------------------------------
+% References
+\phantomsection
+\addcontentsline{toc}{section}{References}
+
+\bibliographystyle{apalike}
+\bibliography{mswp2012-proposal}
+
+\pagebreak
+
+% --------------------------------------------------------------
+% Abbreviations
+\section*{Abbreviations}
+ \addcontentsline{toc}{section}{Abbreviations}
+ 
+ \begin{description}
+  \item[MSWP] Management von Software Projekten
+  \item[WP] Work Package
+ \end{description}
+
+\end{appendix}
+
+
+\end{document}
