@@ -11,7 +11,7 @@
 
 \setlength{\topmargin}{-0.4mm} % (1in=25.4mm)-0.4mm=25mm
 \setlength{\textheight}{243.119mm} % 297mm-40mm-10mm-(11pt=3.881mm)=
-\setlength{\oddsidemargin}{-0.4mm} % (1in=25.4mm)-0.4mm=25mm
+\setlength{\oddsidemargin}{-0.4mm} % (1in=25.4mm)-0.4mm=25mm<
 \setlength{\textwidth}{160mm} % 210mm-50mm=160mm
 \setlength{\headheight}{0mm}
 \setlength{\headsep}{0mm}
@@ -185,7 +185,7 @@ The goals of the platform:
 
 Recent studies show that more and more people are getting obese these days due to an unhealthy lifestyle and way too less exercisement, especially in the so called western society. Many studies and health reports in Europe and America describe the problem and show an increasing trend towards being overweight. The biggest problem being the situation getting worse and worse - especially children are rapidly becoming a big part of the problem, the risk of being overweight is about 30 percent\footnote{\url{http://news.stanford.edu/news/2004/july21/med-obesity-721.html}}. \\
 
-Studies\footnote{\url{http://www.sueddeutsche.de/gesundheit/gesundheitsbericht-des-rki-fast-ein-viertel-der-deutschen-ist-fettleibig-1.1382763}} show, that about 23 Percent of the people in Germany are obese nowadays. Being overweight not only affects your attractiveness, it can lead to very serious health problems like hypertension, asthma, diabetes and other cardiovascular problems.  \\
+Studies\citep{rki:2012} show, that about 23 Percent of the people in Germany are obese nowadays. Being overweight not only affects your attractiveness, it can lead to very serious health problems like hypertension, asthma, diabetes and other cardiovascular problems.  \\
 
 In the Forbes List for the fattest nation, Austria ranks on place 52 with a fat rate of 57.1\%.\footnote{\url{http://www.forbes.com/2007/02/07/worlds-fattest-countries-forbeslife-cx_ls_0208worldfat_3.html}}. Figure \ref{fig:obese_in_eu_pdf} shows a rather recent statistic of the situation in 25 European countries, divided by sex.
 
@@ -250,19 +250,70 @@ This project is accompanied by a scientific study. The goal of the study is to g
 }
 
 % --------------------------------------------------------------
+\pagebreak
 \section{State of the art / current knowledge}
 \label{sect:star}
 
-\note{
-\begin{itemize}
-\item {\em Length: 2-5 pages}
-\item What results and approaches have already been presented in this or related areas?
-\item Relation to the international scientific work in the field (international status of the research)
-\item Description and critical discussion of related scientific work
-\end{itemize}
-}
+%\note{
+%\begin{itemize}
+%\item {\em Length: 2-5 pages}
+%\item What results and approaches have already been presented in this or related areas?
+%\item Relation to the international scientific work in the field (international status of the research)
+%\item Description and critical discussion of related scientific work
+%\end{itemize}
+%}
+
+\subsection{Gamification of Healthcare}
+Nowadays there are several products that are using a gamification approach to motivate the user-base to do sport-activities.
+
+\subsubsection{Nintendo Wii}
+
+One of the first well-known of these systems was introduced by the japanese company called Nintendo in the year 2005 and named Nintendo Wii. This product is a typical games consol, but offered a new kind of remote called ``Wii Remote''. The shape of this remote is also highly inspired by the form of an TV remote and uses 4 infrared sensors on top of this remote which makes it possible to point on several objects presented on the TV-screen with a precision compareable to a common mouse used for personal computers. \\
+
+The included accelerometer is the most important part of this remote which recognizes motions and rotations of the remote and lets users play their games in a very funny and highly interactive way. \\
+
+Another additional input device for the Nintendo Wii is called ``Wii Balance Board'' (see \ref{fig:wiiboard}), which users have to place on the floor in front of the games console. The users have to stand right on top of this board and are able to control the game by switching their weight from one side to the other side.
+For user feedback they also included speakers and vibration sensors into the Wii Remote. \\
+
+\begin{figure}[ht]
+\begin{center}
+\includegraphics[width=12cm]{images/stateoftheart/wiiboard.jpg}
+\caption{Wii Balance Board in action}
+\label{fig:wiiboard}
+\end{center}
+\end{figure}
+
+All these devices are connected via Bluetooth with the Console and are heavy used by sport and fitness games. Some rehabiliation center are using these consoles to gamify the process and making workouts more interesting. These rehabilitation centers were also observed and analyzed in medical studies showing, that patients have more fun doing their daily workout and training and also getting back to a normal physical condition more quickly. \\
+
+\subsubsection{Xbox 360 and Kinect}
+Microsoft also introduced an additional remote for their Xbox 360 in the year 2010 called ``Kinect''. Kinect is working with a different Approach than Wii Remote. It's like a camera placed in front of the TV capturing the users and working with 3D motion sensor, facial recognition and voice recognition (see \ref{fig:kinect}). These facts lead to one big advantage compared to Nintendos remote: the user do not have to hald a remote in his hand and therefore the user isn't constrained within his motions and movements. \\
+
+\begin{figure}[ht]
+\begin{center}
+\includegraphics[width=11cm]{images/stateoftheart/kinect.png}
+\caption{Microsofts Kinect remote}
+\label{fig:kinect}
+\end{center}
+\end{figure}
+
+Microsoft also offers a SDK and Developement ToolKit to allow programmers to build their own Kinect games or application. One of these experiements was build at the University of Minnesota and its goal was to measure or detect diseases like autism. It's also possible to connect a Kinect remote to a Windows PC which makes it easier to run such applications used in an scientific area.
+
+\subsubsection{Playstations Remotes Eye and Move}
+Sony also introduced in the year 2007 and 2009 two remotes, very similar to the previous described remtoes from Microsoft and Nintendo.
+
+Playstation Eye is very similar to Xbox Kinect, offering a camera and microphone to capture the users motions and voice.
+Playstation Move is an Wii Remote like remote with an additonal orb which can change the color to give additonal feedback to the user and is used as anchor point for the Playsstation Eye to recognize the movements. (see \ref{fig:playstationeyeandmove})
+
+\begin{figure}[ht]
+\begin{center}
+\includegraphics[width=11cm]{images/stateoftheart/playstationeyeandmove.png}
+\caption{Playstation Move and Playstation Eye}
+\label{fig:playstationeyeandmove}
+\end{center}
+\end{figure}
 
 % --------------------------------------------------------------
+\pagebreak
 \section{Method}
 \label{sect:method}
 
@@ -447,6 +498,8 @@ This project is accompanied by a scientific study. The goal of the study is to g
  \begin{description}
   \item[MSWP] Management von Software Projekten
   \item[WP] Work Package
+  \item[OECD] Organisation for Economic Co-operation and Development
+  \item[RKI] Robert Koch Institut
  \end{description}
 
 \end{appendix}
