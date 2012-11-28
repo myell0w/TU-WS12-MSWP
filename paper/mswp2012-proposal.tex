@@ -450,8 +450,8 @@ User Centered Design runs through 4 phases [see figure \ref{fig:UCD}]:
 
 \begin{figure}[htb]
 	\centering
-		\includegraphics[width=1\textwidth]{images/UCD.pdf}
-	\caption{User Centered Design Process}
+		\includegraphics[width=0.8\textwidth]{images/method/UCD.pdf}
+	\caption{User Centered Design Process TODO MATTHIAS QUELLE ANGEBEN!}
 	\label{fig:UCD}
 \end{figure}
 
@@ -463,43 +463,49 @@ We decided for a combination of experimental and horizontal prototyping as softw
 Experimental prototyping aims at creating a prototype of the system in an early phase of the development process and is therefore highly compatible with the use of user centered design (see \ref{subsect:ucd}).
 There is also a connection to the empirical study part (see \ref{subsect:emp_study}), as the prototype shall be used for evaluating requirements of users as well as of partners from the industry. Not only should an early prototype lead to a higher-sophisticated user interface with respect to ui design principles and usability issues, but also provide possibility to gain results for the research part of the overall project. 
 
-The prototyping shall be executed in a horizontal manner, that means there should be a fully featured user interface before starting over with any kind of business logic implementation. The advantage of an horizontal approach is, similar to an experimental one, the perfect compatibility with user centered design. Of course this requires a strict separation of user interface and business logic implementation.
+The prototyping shall be executed in a horizontal manner, that means there should be a fully designed user interface before starting over with any kind of business logic implementation. In contrast to that, vertical prototyping aims at implementing one specific feature from the frontend to the backend with its full functionality. The advantage of an horizontal approach is, similar to an experimental one, the perfect compatibility with user centered design. Of course this requires a strict separation of user interface and business logic implementation. See figure \ref{fig:prototyping} for a distinction between horizontal and vertical prototyping.
 
-One advantage of prototyping is, that potential errors in the user interface can be detected in an early phase of the project - also quality assurance can get embedded into the project as early as possible.
+\begin{figure}[htb]
+	\centering
+		\includegraphics[width=0.6\textwidth]{images/method/prototyping}
+	\caption{Horizontal and vertical prototyping \citep[Page 94]{DBLP:books/daglib/0076830}}
+	\label{fig:prototyping}
+\end{figure}
 
-% Software-Entwicklungsmethode
-%Experimentelles Prototyping
-%Erstes Ergebnis: ein erster experimenteller Prototyp
-%Ziel: Sammeln von Erfahrungen mit dem Prototyp
-%Bei diesem Vorgehen wird zu Forschungszwecken bzw. zur Suche nach Möglichkeiten zur Realisierung ein experimenteller Prototyp entwickelt. An diesem wird anschließend eine sehr umfangreiche Problemanalyse und Systemspezifikation durchgeführt. Die gewonnenen Erkenntnisse können anschließend in einem richtigen Produkt verwertet werden.
-
-%Horizontales Prototyping [Bearbeiten]
-%Erstes Ergebnis: Eine ausgewählte Ebene des Gesamtsystems wird fertiggestellt.
-%Ziel: Eine funktionierende Ebene, die vorgestellt werden kann, oder an der sich andere Ebenen orientieren können.
-%In diesem Fall wird nur eine spezifische Ebene des Gesamtsystems realisiert, welche jedoch möglichst vollständig abgebildet wird. (z.B. Realisierung der GUI (Oberfläche) (ohne tiefer liegende Funktionalitäten), zur Vorlage für den Auftraggeber.) Diese Methode hat den Vorteil, dass man dem Auftraggeber schon etwas zeigen kann, ohne das komplette System entwickelt zu haben. Dies setzt jedoch eine starke (sowieso sinnvolle) Trennung der einzelnen Komponenten voraus. Die Oberfläche muss dementsprechend unabhängig von der dahinter liegenden Logik funktionieren oder wenn die Logik-Ebene umgesetzt wird, muss sie unabhängig von der Oberfläche funktionieren.
-
-%Vorteile [Bearbeiten]
-%Die Anforderungen der Anwender können laufend präzisiert und verifiziert werden. Damit sinkt das Risiko einer Fehlentwicklung.
-%Unbeabsichtigte Wechselwirkungen zwischen einzelnen Komponenten des Produkts können früher erkannt werden.
-%Der Fertigstellungsgrad ist besser verifizierbar.
-%Die Qualitätssicherung kann frühzeitig eingebunden werden.
-%Nachteile [Bearbeiten]
-%Prototyping verführt oft dazu, Anforderungen weder korrekt zu erheben noch sauber zu dokumentieren. Der Entwicklungsprozess kann sich dadurch erheblich verlangsamen.
-%Es entstehen während der Entwicklung zusätzliche Kosten, weil der Prototyp nur als Basis für die folgende eigentliche Entwicklung des Produktes dient. Diese Kosten und Zeitaufwand können durch weniger Nacharbeit am Endprodukt wieder ausgeglichen werden.
-
-% TODO Gerhard - Deutschen Text zusammenfassen und auf Englisch formulieren + Grafik für Prototyping
+One advantage of prototyping is that potential errors in the user interface can be detected in an early phase of the project - also quality assurance can get embedded into the project as early as possible.
 
 \subsection{Empirical Study}
 \label{subsect:emp_study}
 
-% Getrennt nach Stakeholders - Partners, Users, (Governments extra oder zu Partners???)
-% Was wünschen sich die Partners?
-% Was wünschen sich die User? --> Verweis zu detaillierter Beschreibung in "User Centered Design"
-% - Umfragen bei Partnern - was wird benötigt + Auswertung der Empirie
+Empirical study of the needs of the main stakeholders in the project is essential. By means of surveys and interviews we try to identify requirements and hope to get answers to the following (and more) questions:
+
+\begin{itemize}
+\item What do end users need/want? What is negligible and can therefore be omitted?
+\item What do they miss in actual systems?
+\item How do they wish to interact with the system?
+\item What are the needs of the different business partners?
+\item Which systems are currently in use at the partners processes?
+\item How would they improve their current systems?
+\end{itemize}
+
+Of course empirical study has to take place at a very early phase in the project to prevent undesirable development and ensure movement into the right direction from the very beginning. The contents of the questionnaire therefore have to be prepared conscientiously and meaningful, so that as much findings as possible can be deduced for use in later phases of the project.
 
 \subsection{Literature Research}
-% - Literaturrecherche - was gibt es bereits, was kann man wiederverwenden, was kann man besser machen?
 
+Certainly we to not have to reinvent the wheel. Therefore a detailed literature research has to be carried out to find possible approaches that can be reused. By finding other scientific work at the same topics we want to save both time and unnecessary work that has already been done by others projects. The literature research part aims at answering the following questions
+
+\begin{itemize}
+\item Which techniques are already in use or have been introduced in the field of
+\begin{itemize}
+\item healthcare applications?
+\item ubiquitous systems?
+\item user centered design?
+\item usability engineering?
+\item ...
+\end{itemize}
+\item Which of the found techniques can be reused?
+\item What can be improved?
+\end{itemize}
 
 %\note{
 %\begin{itemize}
