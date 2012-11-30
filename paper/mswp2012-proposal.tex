@@ -596,7 +596,7 @@ The users current situation regarding the usage or the willingness to use of cur
 \textbf{Dependencies:} P1 \ref{sect:workplan:phase2:p1}\\
 \textbf{Description:} The Alpha-Users should evaluate the prototype (interface and interaction) and redesign it by taking care of their input. This step should be repeated several times until there is no more additional useful feedback from the user-group.\\
 \textbf{Responsible person(s):} Research-Group, Alpha-Users, Dev-Team\\
-\textbf{Goal(s) and expected Results:} Information about necessary changes and redesigned prototype\\
+\textbf{Goal(s) and expected Results:} Information about necessary changes and redesigned prototype (Version 0.5, Milestone M2)\\
 
 \subsubsection{Prototyping P2}
 \label{sect:workplan:phase2:p2}
@@ -611,58 +611,66 @@ The users current situation regarding the usage or the willingness to use of cur
 \textbf{Dependencies:} P2 \ref{sect:workplan:phase2:p2}, ER2 \ref{sect:workplan:phase2:er2}\\
 \textbf{Description:} The new prototype should be reevaluated by the Alpha-Users and also from the Dev-Team (including Security and Quality Specialists). This step covers not only the interface and interaction, but also the quality and security of the product. The knowledge should be used to redesign the prototype and this step should be repeated several times. After a number of iterations the status of the web application should be switched to Beta and Beta-Users will be able to sign in and use the systems. After the last iteration the status should be switched to Release.\\
 \textbf{Responsible person(s):} Alpha-Users, Beta-Users, Strategy Team, Dev-Team\\
-\textbf{Goal(s) and expected Results:} Released web application (Milestone M2)\\
+\textbf{Goal(s) and expected Results:} Released web application (Milestone M3)\\
 
 \subsection{Phase: Connect to 3rd Party Services and mobile Client}
 \label{sect:workplan:3rdpartiesandmobileclient}
 
 \subsubsection{Literature Research LR2}
 \label{sect:workplan:phase3:lr2}
-\textbf{Goal(s):} \\
-\textbf{Dependencies:} \\
-\textbf{Description:} \\
-\textbf{Responsible person(s):} \\
-\textbf{Expected Results:} \\
+\textbf{Dependencies:} None\\
+\textbf{Description:} Collect Knowledge about ubiquitous systems and figure out, how the product can be transformed into such a system by providing apps for smartphones. Search for techniques using NFC, GPS, WiFi, etc.\\
+\textbf{Responsible person(s):} Research Team\\
+\textbf{Goal(s) and expected Results:} Knowledge about ubiquitous systems and mobile apps\\
 
 \subsubsection{Empirical Studie ES3}
-\label{sect:workplan:phase3:es2}
-\textbf{Goal(s):} \\
-\textbf{Dependencies:} \\
-\textbf{Description:} \\
-\textbf{Responsible person(s):} \\
-\textbf{Expected Results:} \\
+\label{sect:workplan:phase3:es3}
+\textbf{Dependencies:} LR2 \ref{sect:workplan:phase3:lr2}\\
+\textbf{Description:} Establish user needs regarding an mobile app and get infos about expectations of such an app \\
+\textbf{Responsible person(s):} Research Team, Users\\
+\textbf{Goal(s) and expected Results:} User needs regarding an mobile app\\
 
 \subsubsection{Range of Function RF2}
 \label{sect:workplan:phase3:rf2}
-\textbf{Goal(s):} \\
-\textbf{Dependencies:} \\
-\textbf{Description:} \\
-\textbf{Responsible person(s):} \\
-\textbf{Expected Results:} \\
-
-\subsubsection{Range of Function RF3}
-\label{sect:workplan:phase3:rf3}
-\textbf{Goal(s):} \\
-\textbf{Dependencies:} \\
-\textbf{Description:} \\
-\textbf{Responsible person(s):} \\
-\textbf{Expected Results:} \\
+\textbf{Dependencies:} ES3 \ref{sect:workplan:phase3:es3}\\
+\textbf{Description:} Convert the knowledge from ES3 to a feature list and requirements for an mobile application.\\
+\textbf{Responsible person(s):} Research Team\\
+\textbf{Goal(s) and expected Results:} Feature list, requirements and interaction concept for an mobile app\\
 
 \subsubsection{Prototyping P3}
 \label{sect:workplan:phase3:p3}
-\textbf{Goal(s):} \\
-\textbf{Dependencies:} \\
-\textbf{Description:} \\
-\textbf{Responsible person(s):} \\
-\textbf{Expected Results:} \\
+\textbf{Dependencies:} ES3 \ref{sect:workplan:phase3:es3}\\
+\textbf{Description:} Implement mobile version of the system with prototyping\\
+\textbf{Responsible person(s):} Dev-Team\\
+\textbf{Goal(s) and expected Results:} Mobile clients\\
+
+\subsubsection{Empirical Studie ES4}
+\label{sect:workplan:phase3:es4}
+\textbf{Dependencies:} None\\
+\textbf{Description:} Establish if and which social health communities (e.g. tracking plattforms) our users are using and find out how to integrate these partner into the system. \\
+\textbf{Responsible person(s):} Research Team, Users\\
+\textbf{Goal(s) and expected Results:} Possible new partners (3rd party services)\\
+
+\subsubsection{Range of Function RF3}
+\label{sect:workplan:phase3:rf3}
+\textbf{Dependencies:} ES4 \ref{sect:workplan:phase3:es4}\\
+\textbf{Description:} Use information gained from ES4 to specify 3rd party services to integrate into the system e.g. by finding APIs etc.\\
+\textbf{Responsible person(s):} Research Team, Dev Team\\
+\textbf{Goal(s) and expected Results:} Features (services to integrate)\\
+
+\subsubsection{Prototyping P4}
+\label{sect:workplan:phase3:p4}
+\textbf{Dependencies:} ES4 \ref{sect:workplan:phase3:es4}\\
+\textbf{Description:} Integrate established services into the system\\
+\textbf{Responsible person(s):} Dev Team\\
+\textbf{Goal(s) and expected Results:} System with integrated services\\
 
 \subsubsection{Evaluierung und Redesign ER3}
 \label{sect:workplan:phase3:er3}
-\textbf{Goal(s):} \\
-\textbf{Dependencies:} \\
-\textbf{Description:} \\
-\textbf{Responsible person(s):} \\
-\textbf{Expected Results:} \\
+\textbf{Dependencies:} P3 \ref{sect:workplan:phase3:p3}, P4 \ref{sect:workplan:phase3:p4}\\
+\textbf{Description:} Evaluate and redesign the system and mobile clients by the users with several iterations.\\
+\textbf{Responsible person(s):} Dev Team, Users\\
+\textbf{Goal(s) and expected Results:} Redesigned system and mobile clients (Version 2.0, Milestone M4)\\
 
 
 % --------------------------------------------------------------
