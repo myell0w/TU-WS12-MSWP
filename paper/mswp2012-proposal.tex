@@ -492,7 +492,7 @@ Of course empirical study has to take place at a very early phase in the project
 
 \subsection{Literature Research}
 
-Certainly we to not have to reinvent the wheel. Therefore a detailed literature research has to be carried out to find possible approaches that can be reused. By finding other scientific work at the same topics we want to save both time and unnecessary work that has already been done by others projects. The literature research part aims at answering the following questions
+Certainly we do not have to reinvent the wheel. Therefore a detailed literature research has to be carried out to find possible approaches that can be reused. By finding other scientific work at the same topics we want to save both time and unnecessary work that has already been done by others projects. The literature research part aims at answering the following questions
 
 \begin{itemize}
 \item Which techniques are already in use or have been introduced in the field of
@@ -519,27 +519,154 @@ Certainly we to not have to reinvent the wheel. Therefore a detailed literature 
 %}
 
 % --------------------------------------------------------------
+\newpage
 \section{Detailed description of the workpackages}
 \label{sect:workplan}
 
-\note{
-\begin{itemize}
-\item {\em Length: 2-4 pages}
-\item Structuring the project into self-contained parts.
-\item Additional verbal descriptions.
-\item Work packages
-    \begin{itemize}
-    \item title
-    \item goal(s)
-    \item description
-    \item expected results
-    \item responsible person(s)
-    \item dependencies
-    \end{itemize}
-\end{itemize}
-}
+%\note{
+%\begin{itemize}
+%\item {\em Length: 2-4 pages}
+%\item Structuring the project into self-contained parts.
+%\item Additional verbal descriptions.
+%\item Work packages
+%    \begin{itemize}
+%    \item title
+%    \item goal(s)
+%    \item description
+%    \item expected results
+%    \item responsible person(s)
+%    \item dependencies
+%    \end{itemize}
+%\end{itemize}
+%}
+
+\subsection{Phase: Range of Functions}
+\label{sect:workplan:rangeoffucntions}
+
+\subsubsection{Literature Research LR1}
+\label{sect:workplan:phase1:lr1}
+\textbf{Dependencies:} None\\
+\textbf{Description:} Find and describe existing Systems and emphasis their approach.
+Analyze the user-interfaces and the provided interaction with the system. Establish the functionality and their business model.\\
+\textbf{Responsible person(s):} Research Group\\
+\textbf{Goal(s) and expected Results:} Information about current systems, their feature set and user-interface\\
+
+\subsubsection{Empirical Study ES1}
+\label{sect:workplan:phase1:es1}
+\textbf{Dependencies:} LR1 \ref{sect:workplan:phase1:lr1}\\
+\textbf{Description:} Create questionary for users, to get information about their thoughts about the systems discovered in \ref{sect:workplan:phase1:lr1}. They should evaluate these results and discover issues with their User-Interface and functionality and also mention their needs regarding these two aspects.\\
+The users current situation regarding the usage or the willingness to use of current systems are also parts to work out. \\
+\textbf{Responsible person(s):} Research Group, Alpha-User \\
+\textbf{Goal(s) and expected Results:} Knowledge about the user needs.\\
+
+\subsubsection{Empirical Study ES2}
+\label{sect:workplan:phase1:es2}
+\textbf{Dependencies:} LR1 \ref{sect:workplan:phase1:lr1}\\
+\textbf{Description:} Meeting with possible service partners (restaruants, supermarkets, doctors, etc.) to identify their currently used systems and their needs, thoughts and whishes and specify how a cooperation could look like.\\
+\textbf{Responsible person(s):} Strategy Team\\
+\textbf{Goal(s) and expected Results:} Knowledge about the needs of service partners. Signed partner contracts. \\
+
+\subsubsection{Range of Functions RF1}
+\label{sect:workplan:phase1:rf1}
+\textbf{Dependencies:} LR1 \ref{sect:workplan:phase1:lr1}\\
+\textbf{Description:} Brainstorming about possible features of the system using knowledge discovered during step LR1 (\ref{sect:workplan:phase1:lr1}).\\
+\textbf{Responsible person(s):} Research Team\\
+\textbf{Goal(s) and expected Results:} Possible feature list\\
+
+\pagebreak
+\subsubsection{Range of Functions RF2}
+\label{sect:workplan:phase1:rf2}
+\textbf{Dependencies:} RF1 \ref{sect:workplan:phase1:rf1}, ES1 \ref{sect:workplan:phase1:es1}, ES2 \ref{sect:workplan:phase1:es2}\\
+\textbf{Description:} Combine knowledge from the two empirical studies ES1 and ES2 and evaluate the brainstormed feature list. Check if the discovered features from the empirical studies are matching the created feature list\\
+\textbf{Responsible person(s):} Research Team\\
+\textbf{Goal(s) and expected Results:} Final set of features for version 1.0 (Milestone M1)\\
+
+\subsection{Phase: Towards Release}
+\label{sect:workplan:towardsrelease}
+
+\subsubsection{Prototyping P1}
+\label{sect:workplan:phase2:p1}
+\textbf{Dependencies:} RF2 \ref{sect:workplan:phase1:rf2}\\
+\textbf{Description:} Create first version of horizontal prototype by creating the user-interface. Every part of the system should be covered.\\
+\textbf{Responsible person(s):} Dev-Team\\
+\textbf{Goal(s) and expected Results:} first version of prototype\\
+
+\subsubsection{Evaluation and Redesign ER1}
+\label{sect:workplan:phase2:er1}
+\textbf{Dependencies:} P1 \ref{sect:workplan:phase2:p1}\\
+\textbf{Description:} The Alpha-Users should evaluate the prototype (interface and interaction) and redesign it by taking care of their input. This step should be repeated several times until there is no more additional useful feedback from the user-group.\\
+\textbf{Responsible person(s):} Research-Group, Alpha-Users, Dev-Team\\
+\textbf{Goal(s) and expected Results:} Information about necessary changes and redesigned prototype\\
+
+\subsubsection{Prototyping P2}
+\label{sect:workplan:phase2:p2}
+\textbf{Dependencies:} P1 \ref{sect:workplan:phase2:p1}\\
+\textbf{Description:} Extend the existing prototype by adding functionality and implement the features.\\
+\textbf{Responsible person(s):} Dev-Team\\
+\textbf{Goal(s) and expected Results:} Prototype with all features\\
+
+\pagebreak
+\subsubsection{Evaluierung und Redesign ER2}
+\label{sect:workplan:phase2:er2}
+\textbf{Dependencies:} P2 \ref{sect:workplan:phase2:p2}, ER2 \ref{sect:workplan:phase2:er2}\\
+\textbf{Description:} The new prototype should be reevaluated by the Alpha-Users and also from the Dev-Team (including Security and Quality Specialists). This step covers not only the interface and interaction, but also the quality and security of the product. The knowledge should be used to redesign the prototype and this step should be repeated several times. After a number of iterations the status of the web application should be switched to Beta and Beta-Users will be able to sign in and use the systems. After the last iteration the status should be switched to Release.\\
+\textbf{Responsible person(s):} Alpha-Users, Beta-Users, Strategy Team, Dev-Team\\
+\textbf{Goal(s) and expected Results:} Released web application (Milestone M2)\\
+
+\subsection{Phase: Connect to 3rd Party Services and mobile Client}
+\label{sect:workplan:3rdpartiesandmobileclient}
+
+\subsubsection{Literature Research LR2}
+\label{sect:workplan:phase3:lr2}
+\textbf{Goal(s):} \\
+\textbf{Dependencies:} \\
+\textbf{Description:} \\
+\textbf{Responsible person(s):} \\
+\textbf{Expected Results:} \\
+
+\subsubsection{Empirical Studie ES3}
+\label{sect:workplan:phase3:es2}
+\textbf{Goal(s):} \\
+\textbf{Dependencies:} \\
+\textbf{Description:} \\
+\textbf{Responsible person(s):} \\
+\textbf{Expected Results:} \\
+
+\subsubsection{Range of Function RF2}
+\label{sect:workplan:phase3:rf2}
+\textbf{Goal(s):} \\
+\textbf{Dependencies:} \\
+\textbf{Description:} \\
+\textbf{Responsible person(s):} \\
+\textbf{Expected Results:} \\
+
+\subsubsection{Range of Function RF3}
+\label{sect:workplan:phase3:rf3}
+\textbf{Goal(s):} \\
+\textbf{Dependencies:} \\
+\textbf{Description:} \\
+\textbf{Responsible person(s):} \\
+\textbf{Expected Results:} \\
+
+\subsubsection{Prototyping P3}
+\label{sect:workplan:phase3:p3}
+\textbf{Goal(s):} \\
+\textbf{Dependencies:} \\
+\textbf{Description:} \\
+\textbf{Responsible person(s):} \\
+\textbf{Expected Results:} \\
+
+\subsubsection{Evaluierung und Redesign ER3}
+\label{sect:workplan:phase3:er3}
+\textbf{Goal(s):} \\
+\textbf{Dependencies:} \\
+\textbf{Description:} \\
+\textbf{Responsible person(s):} \\
+\textbf{Expected Results:} \\
+
 
 % --------------------------------------------------------------
+\pagebreak
 \section{Time plan (Gantt chart)}
 \label{sect:timeplan}
 
