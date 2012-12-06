@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="MSWP-2012" company="TU Wien" webLink="http://" view-date="2014-04-14" view-index="0" gantt-divider-location="358" resource-divider-location="300" version="2.0" locale="de_DE">
+<project name="MSWP-2012" company="TU Wien" webLink="http://" view-date="2015-06-22" view-index="0" gantt-divider-location="358" resource-divider-location="300" version="2.0" locale="de_DE">
     <description/>
     <view zooming-state="default:7" id="gantt-chart">
         <field id="tpd3" name="Vorgang" width="57" order="0"/>
@@ -36,69 +36,71 @@
             <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
             <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
         </taskproperties>
-        <task id="1" name="LR1" color="#8cb6ce" meeting="false" start="2013-06-03" duration="15" complete="0" expand="true">
+        <task id="1" name="LR1" color="#8cb6ce" meeting="false" start="2013-06-03" duration="30" complete="0" expand="true">
             <depend id="2" type="2" difference="0" hardness="Strong"/>
             <depend id="6" type="2" difference="0" hardness="Strong"/>
             <depend id="8" type="2" difference="0" hardness="Strong"/>
         </task>
-        <task id="8" name="RF1" color="#8cb6ce" meeting="false" start="2013-06-24" duration="10" complete="0" expand="true">
+        <task id="8" name="RF1" color="#8cb6ce" meeting="false" start="2013-07-15" duration="20" complete="0" expand="true">
             <depend id="10" type="2" difference="0" hardness="Strong"/>
         </task>
-        <task id="2" name="ES1" color="#8cb6ce" meeting="false" start="2013-06-24" duration="25" complete="0" expand="true">
+        <task id="2" name="ES1" color="#8cb6ce" meeting="false" start="2013-07-15" duration="50" complete="0" expand="true">
             <depend id="10" type="2" difference="0" hardness="Strong"/>
         </task>
-        <task id="6" name="ES2" color="#8cb6ce" meeting="false" start="2013-06-24" duration="25" complete="0" expand="true">
+        <task id="6" name="ES2" color="#8cb6ce" meeting="false" start="2013-07-15" duration="50" complete="0" expand="true">
             <depend id="10" type="2" difference="0" hardness="Strong"/>
         </task>
-        <task id="10" name="RF2" color="#8cb6ce" meeting="false" start="2013-07-29" duration="15" complete="0" expand="true">
+        <task id="10" name="RF2" color="#8cb6ce" meeting="false" start="2013-09-23" duration="30" complete="0" expand="true">
             <depend id="15" type="2" difference="0" hardness="Strong"/>
         </task>
-        <task id="15" name="Milestone 1  v0.1" color="#ff0000" meeting="true" start="2013-08-19" duration="0" complete="0" expand="true">
+        <task id="15" name="Milestone 1  v0.1" color="#ff0000" meeting="true" start="2013-11-04" duration="0" complete="0" expand="true">
             <depend id="20" type="2" difference="0" hardness="Strong"/>
         </task>
-        <task id="20" name="P1" color="#009900" meeting="false" start="2013-08-19" duration="25" complete="0" expand="true">
+        <task id="20" name="P1" color="#009900" meeting="false" start="2013-11-04" duration="50" complete="0" expand="true">
             <depend id="22" type="2" difference="0" hardness="Strong"/>
             <depend id="44" type="2" difference="0" hardness="Strong"/>
         </task>
-        <task id="22" name="ER1" color="#009900" meeting="false" start="2013-09-23" duration="25" complete="0" expand="true">
+        <task id="22" name="ER1" color="#009900" meeting="false" start="2014-01-13" duration="50" complete="0" expand="true">
             <depend id="27" type="2" difference="0" hardness="Strong"/>
             <depend id="48" type="2" difference="0" hardness="Strong"/>
         </task>
-        <task id="27" name="Milestone 2 v0.5" color="#ff0000" meeting="true" start="2013-10-28" duration="0" complete="0" expand="true"/>
-        <task id="44" name="P2" color="#000099" meeting="false" start="2013-09-23" duration="30" complete="0" expand="true">
+        <task id="27" name="Milestone 2 v0.5" color="#ff0000" meeting="true" start="2014-03-24" duration="0" complete="0" expand="true">
             <depend id="48" type="2" difference="0" hardness="Strong"/>
         </task>
-        <task id="48" name="ER2" color="#000099" meeting="false" start="2013-11-04" duration="30" complete="0" expand="true">
+        <task id="44" name="P2" color="#000099" meeting="false" start="2014-01-13" duration="60" complete="0" expand="true">
+            <depend id="48" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="48" name="ER2" color="#000099" meeting="false" start="2014-04-07" duration="60" complete="0" expand="true">
             <depend id="54" type="2" difference="0" hardness="Strong"/>
         </task>
-        <task id="54" name="Milestone Web App" color="#ff0000" meeting="true" start="2013-12-16" duration="0" complete="0" expand="true">
+        <task id="54" name="Milestone Web App" color="#ff0000" meeting="true" start="2014-06-30" duration="0" complete="0" expand="true">
             <depend id="59" type="2" difference="0" hardness="Strong"/>
             <depend id="72" type="2" difference="0" hardness="Strong"/>
         </task>
-        <task id="57" name="LR2" color="#00cccc" meeting="false" start="2013-11-18" duration="20" complete="0" expand="true">
+        <task id="57" name="LR2" color="#00cccc" meeting="false" start="2014-01-13" duration="40" complete="0" expand="true">
             <depend id="59" type="2" difference="0" hardness="Strong"/>
         </task>
-        <task id="59" name="ES3" color="#00cccc" meeting="false" start="2013-12-16" duration="30" complete="0" expand="true">
+        <task id="59" name="ES3" color="#00cccc" meeting="false" start="2014-06-30" duration="60" complete="0" expand="true">
             <depend id="63" type="2" difference="0" hardness="Strong"/>
         </task>
-        <task id="63" name="RF2" color="#00cccc" meeting="false" start="2014-01-27" duration="35" complete="0" expand="true">
+        <task id="63" name="RF2" color="#00cccc" meeting="false" start="2014-09-22" duration="70" complete="0" expand="true">
             <depend id="68" type="2" difference="0" hardness="Strong"/>
         </task>
-        <task id="68" name="P3" color="#00cccc" meeting="false" start="2014-03-17" duration="55" complete="0" expand="true">
+        <task id="68" name="P3" color="#00cccc" meeting="false" start="2014-12-29" duration="110" complete="0" expand="true">
             <depend id="83" type="2" difference="0" hardness="Strong"/>
         </task>
-        <task id="72" name="ES4" color="#33ff00" meeting="false" start="2013-12-16" duration="55" complete="0" expand="true">
+        <task id="72" name="ES4" color="#33ff00" meeting="false" start="2014-06-30" duration="110" complete="0" expand="true">
             <depend id="76" type="2" difference="0" hardness="Strong"/>
             <depend id="80" type="2" difference="0" hardness="Strong"/>
         </task>
-        <task id="76" name="RF3" color="#33ff00" meeting="false" start="2014-03-03" duration="35" complete="0" expand="true"/>
-        <task id="80" name="P4" color="#33ff00" meeting="false" start="2014-03-03" duration="50" complete="0" expand="true">
+        <task id="76" name="RF3" color="#33ff00" meeting="false" start="2014-12-01" duration="70" complete="0" expand="true"/>
+        <task id="80" name="P4" color="#33ff00" meeting="false" start="2014-12-01" duration="100" complete="0" expand="true">
             <depend id="83" type="2" difference="0" hardness="Strong"/>
         </task>
-        <task id="83" name="ER3" color="#33ff00" meeting="false" start="2014-06-02" duration="45" complete="0" expand="true">
+        <task id="83" name="ER3" color="#33ff00" meeting="false" start="2015-06-01" duration="90" complete="0" expand="true">
             <depend id="86" type="2" difference="0" hardness="Strong"/>
         </task>
-        <task id="86" name="Milestone v1.0" color="#ff0000" meeting="true" start="2014-08-04" duration="0" complete="0" expand="true"/>
+        <task id="86" name="Milestone v1.0" color="#ff0000" meeting="true" start="2015-10-05" duration="0" complete="0" expand="true"/>
     </tasks>
     <resources/>
     <allocations/>
