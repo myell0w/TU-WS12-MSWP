@@ -435,9 +435,24 @@ This facts also give the system the ability to focus more on the users needs tha
 \section{Method}
 \label{sect:method}
 
+
+%\note{
+%\begin{itemize}
+%\item {\em Length: 2-5 pages}
+%\item {\bf How?}
+%\item How should the expected results be achieved?
+%\item What method(s) will be applied? (e.g., empirical study, user-centered design, prototype implementation,...)
+%\item Description of the methods.
+%\item Justifications for chosen methods.
+%\end{itemize}
+%}
+
+
 \subsection{User Centered Design}
 \label{subsect:ucd}
-We decided on \emph{User Centered Design} as the procedure model used to accompany the creation of the Modern Health Care System. We need to identify and evaluate the users and their needs as a prerequisitory for building an effective and interactive system. User Centered Design is an iterative process that aims at supporting this procedure by integrating the user early into the design process. By the means of user research and a systematic usability enginerring process it is possible to identify how user think and work. User Centered Design focuses on the solution and the quality of the user experience, in contrast to traditional methods that more often emphasize on functionality and robustness of the system. \\
+We decided on \emph{User Centered Design} as the procedure model used to accompany the creation of the Modern Health Care System because it is a structured method that involves the end users throughout all stages of the design and development of our system. We need to identify and evaluate the users and their needs as a prerequisitory for building an effective and interactive system. User Centered Design is an iterative process that aims at supporting this procedure by integrating the user early into the design process. By the means of user research and a systematic usability enginerring process it is possible to identify how user think and work. This enables us to get a better understanding of the actual needs of the users and how to solve their problems by the means of an effective and fun to use system. Moreover we get a better understanding of the motivation and psychological profile of our users, which should help gathering knowledge in the field of gamification.
+
+User Centered Design focuses on the solution and the quality of the user experience, in contrast to traditional methods that more often emphasize on functionality and robustness of the system. \\
 
 User Centered Design runs through 4 phases [see figure \ref{fig:UCD}]:
 
@@ -451,14 +466,14 @@ User Centered Design runs through 4 phases [see figure \ref{fig:UCD}]:
 \begin{figure}[htb]
 	\centering
 		\includegraphics[width=0.8\textwidth]{images/method/UCD.pdf}
-	\caption{User Centered Design Process TODO MATTHIAS QUELLE ANGEBEN!}
+	\caption{User Centered Design Process [\cite{usability11}]}
 	\label{fig:UCD}
 \end{figure}
 
 During the \emph{Research Phase} information about the users, their profiles and their needs is collected. During the \emph{Design Phase} the requirements are specified based on the information gathered in the research phase and the concepts are created. During the \emph{Prototyping Phase} various forms of mockups and prototypes are created based on the information gathered in the design phase. In the \emph{Evaluation Phase} the prototypes and mockups are finally discussed with the users and evaluated. It is important to repeatedly check if the needs of the users are still met. Therefore the phases are interconnected and fast iteration is a vital part of User Centered Design.
 
 \subsection{Experimental Horizontal Prototyping}
-We decided for a combination of experimental and horizontal prototyping as software development method.
+We decided for a combination of experimental and horizontal prototyping as software development method because it perfectly fits into the overall procedure model. By creating an horizontal prototype in an early state and iterating it with the information gathered from our users we aim at creating a highly usable product with reasonable costs.
 
 Experimental prototyping aims at creating a prototype of the system in an early phase of the development process and is therefore highly compatible with the use of user centered design (see \ref{subsect:ucd}).
 There is also a connection to the empirical study part (see \ref{subsect:emp_study}), as the prototype shall be used for evaluating requirements of users as well as of partners from the industry. Not only should an early prototype lead to a higher-sophisticated user interface with respect to ui design principles and usability issues, but also provide possibility to gain results for the research part of the overall project. 
@@ -468,20 +483,27 @@ The prototyping shall be executed in a horizontal manner, that means there shoul
 \begin{figure}[htb]
 	\centering
 		\includegraphics[width=0.6\textwidth]{images/method/prototyping}
-	\caption{Horizontal and vertical prototyping \citep[Page 94]{DBLP:books/daglib/0076830}}
+	\caption{Horizontal and vertical prototyping \citep[Page 94]{nielsen1994}}
 	\label{fig:prototyping}
 \end{figure}
 
 One advantage of prototyping is that potential errors in the user interface can be detected in an early phase of the project - also quality assurance can get embedded into the project as early as possible.
 
+\subsection{Thinking Aloud}
+\label{subsect:think_aloud}
+
+Thinking Aloud is a method developed in the usability testing labs of IBM and is one of the most valuable usability engineering methods according to Jakob Nielsen \citep[Page 195ff]{nielsen1994}. It involves participants thinking aloud as they perform certain tasks. The participants are asked to say whatever they are thinking about, looking at, doing or feeling while performing the tasks. Observers take notes of everything the participant says during the scenario without attempting to interpret their claims. The sessions are usually recorded to enable you to go back later and connect the claims with the tasks the participant was currently performing. The purpose of this method is to make assumptions explicit. By explicitely saying their thoughts, it gets easier to understand how the participants view the system and to identify their major misconceptions. \\
+
+We choose to use Thinking Aloud during the conception of the Modern Health Care System because it helps reveiling \emph{why} users do something. It helps us focusing on the interaction needs of the users and to develop a highly integrated ubiquitous system. It is very important to integrate Thinking Aloud in a very early stage of the design and development process because early clues can help anticipating and tracing the source of problems and this ultimately leads to a better system and reduced costs.
+
 \subsection{Empirical Study}
 \label{subsect:emp_study}
 
-Empirical study of the needs of the main stakeholders in the project is essential. By means of surveys and interviews we try to identify requirements and hope to get answers to the following (and more) questions:
+Empirical study of the needs of the main stakeholders in the project is essential. Creating a product that does either not suit the workflow of the desired users or doesn't gain any traction for viable business partners would be a failure of the project. By means of surveys and interviews we try to identify requirements at the beginning and aim at getting answers to at least the following questions:
 
 \begin{itemize}
 \item What do end users need/want? What is negligible and can therefore be omitted?
-\item What do they miss in actual systems?
+\item What do they miss in current systems?
 \item How do they wish to interact with the system?
 \item What are the needs of the different business partners?
 \item Which systems are currently in use at the partners processes?
@@ -492,7 +514,9 @@ Of course empirical study has to take place at a very early phase in the project
 
 \subsection{Literature Research}
 
-Certainly we do not have to reinvent the wheel. Therefore a detailed literature research has to be carried out to find possible approaches that can be reused. By finding other scientific work at the same topics we want to save both time and unnecessary work that has already been done by others projects. The literature research part aims at answering the following questions
+Certainly we do not have to and do not intent to reinvent the wheel with the Modern Health Care System, therefore a detailed literature research has to be carried out to find possible approaches that are already tested and can be reused. By finding other scientific work at the same topics we want to save both time and unnecessary work that has already been done by others and concentrate on the questions that haven't been answered yet. \\
+
+The literature research part aims at answering the following questions:
 
 \begin{itemize}
 \item Which techniques are already in use or have been introduced in the field of
@@ -501,22 +525,11 @@ Certainly we do not have to reinvent the wheel. Therefore a detailed literature 
 \item ubiquitous systems?
 \item user centered design?
 \item usability engineering?
-\item ...
-\end{itemize}
+\end{itemize} 
 \item Which of the found techniques can be reused?
 \item What can be improved?
+\item Which research questions are still open to answer?
 \end{itemize}
-
-%\note{
-%\begin{itemize}
-%\item {\em Length: 2-5 pages}
-%\item {\bf How?}
-%\item How should the expected results be achieved?
-%\item What method(s) will be applied? (e.g., empirical study, user-centered design, prototype implementation,...)
-%\item Description of the methods.
-%\item Justifications for chosen methods.
-%\end{itemize}
-%}
 
 % --------------------------------------------------------------
 \newpage
@@ -579,7 +592,7 @@ The users current situation regarding the usage or the willingness to use of cur
 \textbf{Dependencies:} RF1 \ref{sect:workplan:phase1:rf1}, ES1 \ref{sect:workplan:phase1:es1}, ES2 \ref{sect:workplan:phase1:es2}\\
 \textbf{Description:} Combine knowledge from the two empirical studies ES1 and ES2 and evaluate the brainstormed feature list. Check if the discovered features from the empirical studies are matching the created feature list\\
 \textbf{Responsible person(s):} Research Team\\
-\textbf{Goal(s) and expected Results:} Final set of features for version 1.0 (Milestone M1)\\
+\textbf{Goal(s) and expected Results:} Final set of features for version 0.1 (Milestone M1)\\
 
 \subsection{Phase: Towards Release}
 \label{sect:workplan:towardsrelease}
@@ -670,7 +683,7 @@ The users current situation regarding the usage or the willingness to use of cur
 \textbf{Dependencies:} P3 \ref{sect:workplan:phase3:p3}, P4 \ref{sect:workplan:phase3:p4}\\
 \textbf{Description:} Evaluate and redesign the system and mobile clients by the users with several iterations.\\
 \textbf{Responsible person(s):} Dev Team, Users\\
-\textbf{Goal(s) and expected Results:} Redesigned system and mobile clients (Version 2.0, Milestone M4)\\
+\textbf{Goal(s) and expected Results:} Redesigned system and mobile clients (Version 1.0, Milestone M4)\\
 
 
 % --------------------------------------------------------------
