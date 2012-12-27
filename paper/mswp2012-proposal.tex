@@ -689,7 +689,6 @@ The users current situation regarding the usage or the willingness to use of cur
 
 
 % --------------------------------------------------------------
-\pagebreak
 \section{Time plan (Gantt chart)}
 \label{sect:timeplan}
 
@@ -737,34 +736,91 @@ The users current situation regarding the usage or the willingness to use of cur
 \section{Human resources / team}
 \label{sect:team}
 
-\note{
-\begin{itemize}
-\item {\em Length: 1-2 pages}
-\item Description of the team that is needed to carry out the project. (For the execution phase of the project, not the planning phase.)
-\item How many people?
-\item To what extent are individual members needed?
-\item What knowledge, skills, and experiences are needed for each member?
-\item Demonstrate that the members will be able to carry out the project successfully.
-\item Work structure
-	\begin{itemize}
-	\item     Who will lead the project?
-	\item     How do they work together?
-	\item     Management and coordination
-		\begin{itemize}
-		\item 	        What communication structures will be established? (e.g., mailing list, blog, CMS, CVS, ...)
-		\item 	        How often will meetings take place? (Who will participate?)
-		\item 	        How will the work be documented?
-		\item 	        How will information be stored and shared?
-		\end{itemize}
-	\end{itemize}
-\item Cooperations
-	\begin{itemize}
-	\item     Will external cooperators be part of the project? (e.g., other research institutions or companies)
-	\item     What is their role?
-	 \item    Why are they needed?
-	\end{itemize}
-\end{itemize}
-}
+%\note{
+%\begin{itemize}
+%\item {\em Length: 1-2 pages}
+%\item Description of the team that is needed to carry out the project. (For the execution phase of the project, not the planning phase.)
+%\item How many people?
+%\item To what extent are individual members needed?
+%\item What knowledge, skills, and experiences are needed for each member?
+%\item Demonstrate that the members will be able to carry out the project successfully.
+%\item Work structure
+%	\begin{itemize}
+%	\item     Who will lead the project?
+%	\item     How do they work together?
+%	\item     Management and coordination
+%		\begin{itemize}
+%		\item 	        What communication structures will be established? (e.g., mailing list, blog, CMS, CVS, ...)
+%		\item 	        How often will meetings take place? (Who will participate?)
+%		\item 	        How will the work be documented?
+%		\item 	        How will information be stored and shared?
+%		\end{itemize}
+%	\end{itemize}
+%\item Cooperations
+%	\begin{itemize}
+%	\item     Will external cooperators be part of the project? (e.g., other research institutions or companies)
+%	\item     What is their role?
+%	 \item    Why are they needed?
+%	\end{itemize}
+%\end{itemize}
+%}
+
+\subsection{Teams}
+\subsubsection{Strategy Team}
+The Strategy Team is responsible for leading the project and handling the most importing decisions as well as keeping it all together and assuring the quality of the product. \\
+
+The \textbf{project manager} will be the head of the project and will be assisted by his co project manager during all phases and as a backup in case of unforseeable circuumstances. One of them should also have a funded technical knowledge, the other expirenced in economical topics. Both should work as a team and also handle the ressource management and trigger the planned phases. \\
+
+Another very importent rule to fill will be the \textbf{Quality manager}. This person will create the quality plan, organize reviews and check, if the corresponding plan is also executed like intended. \\
+
+Just before the release of Version 1.0 two people will join the team to undertake marketing tasks from the project managers.
+
+Therefore the number of members of the Strategy Team will increase from \textbf{three people} at the beginning to \textbf{five people} before the first release.
+
+\subsubsection{Research Team}
+This team will be responsible for research topics, therefore experience in scientific area is mandatory for them. They will also lead the user interviews with Alpha- and Beta-User and prepare these interviews by collecting knowledge through research of the state-of-the-art methods and systems. \\
+
+The results of the user interviews will be analyzed and statistically evaluated by this team to get the best advantage out of it and enhance the product.
+
+They are also responsible for market analysis and observation of customer needs. \\
+
+The team will include \textbf{three experts} at the start of the project and will \textbf{increase to five people} in the middle of the project. 
+
+\subsubsection{Dev Team}
+There will be several Dev Teams with different main aspects to cover, but whatsoever there will be couple of poeple that will be responsible for small parts of each team.
+
+On of these experts will be the \textbf{Security Expert}. This person will be responsible for all the security issues regarding data storage, anonymization of personal information of the users, reliability, recovery, etc. He will also make choices regarding server selection and managing the infrastructure. At the end of the project another Security Expert will join as backup and support. \\
+
+Two \textbf{Usability and Design Engineers} will be part of the project from the beginning to develop design guidelines and also lead the project from the first prototype to the final product regarding interface and interaction design.
+
+These engineers should also have experience in designing mobile clients, because the design of the mobile application will also be part of their work. \\
+
+The team to start development will be the \textbf{Web Dev Team} and be responsible for the web client and the background services. Therefore knowledge of HTML5, CSS, JavaScript and additional programming languages to implement a backend is required. The size of the team will be between \textbf{six and ten people}, depending on the project progress. \\
+
+Additional a \textbf{Mobile Dev Team} will join to implment mobile clients for the project. Only iOS and Android clients are planned until version 2.0 therefore knowledge in iOS and/or Android programming is mandatory. The size of this team should be between \textbf{three and five people}.
+
+\subsection{Work structure}
+
+\subsubsection{Weekly Joure Fix}
+Every week there will be a meeting with all responsible persons including the project managers, quality managers, lead engineers (person from each dev-team, usability and design engineers, security engineer, etc.) and the lead of the research team to discuss the current progress of the project and the next steps.
+
+\subsubsection{Reviews}
+The Quality Manager will held several reviews to check the project documentation, the execution of test plans and results from the user-interviews. Therefore he will be in contact with the research team as well as with the dev team.
+
+\subsubsection{Scrum}
+As development process scrum should be used. There will be one person in each dev team which is the manager of its own small group to make communication easier with the project manager. This person will check during the daily scrum meeting the progress of this small group. Once a week the project manager will meet the team to check the overall progress, he is also responsible fro defining the product backlog for the next sprint.
+
+\subsubsection{Communication and Documentation}
+For each team there will be a seperate mailing list to distribute messages to the whole team.
+
+Additional there will be two blogs. The first one will be handling the internal communication inside the company, covering news for all employees, strategy decisions and so one. \\
+
+The official blog will be used as communication channel to the users and the community and will also be used to publish scientifical relevant results from the research group as well as results from user interviews. \\
+
+The created project documentation will be stored in the configuration management tool, which will also handle access control and versioning. This tool will be set up by the strategy team before the project start.
+
+
+\pagebreak
 
 % --------------------------------------------------------------
 \section{Costs}
