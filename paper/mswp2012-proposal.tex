@@ -8,6 +8,7 @@
 \usepackage{color}
 \usepackage{subfigure}
 \usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\usepackage[right]{eurosym}
 % \usepackage{mathptmx} % Times New Roman
 
 \setlength{\topmargin}{-0.4mm} % (1in=25.4mm)-0.4mm=25mm
@@ -826,47 +827,139 @@ The created project documentation will be stored in the configuration management
 \section{Costs}
 \label{sect:costs}
 
-\note{
+%\note{
+%\begin{itemize}
+%\item {\em Length: 2-3 pages}
+%\item Rough estimation of cost in form of calculation (table(s)) + descriptive text.
+%\item Justification for the personnel and non-personnel costs (equipment, material, travel and other costs)
+%\item An Excel template is provided as supplementary material to support budgeting.
+%\item Personnel costs
+%	\begin{itemize}
+%	\item     Justification for the personnel to be assigned to the project (type of position(s), description of nature of work, length and extent of involvement in the project)
+%	\item     The application should include all persons who will be required for the proposed project (project lead, researchers, developers, advisory board, etc.). The available legal categories of employment are contracts of employment for full- or part-time employees (DV) and reimbursement for work on an hourly basis (GB). In addition, a part-time contract of employment (DV 50\%, ``studentische Mitarbeiter'') may be requested for people who have not yet completed a Master or Diploma program (Diplom) in the relevant subject.
+%	 \item    The justification of the requested personnel should contain:
+%		\begin{itemize}
+%		\item 	        description of type of work;
+%		\item 		        extent of involvement (part-time contracts are permitted).
+%		\end{itemize}
+%	\item Exact numbers of employment categories can be found on the FWF Website (\href{http://www.fwf.ac.at/de/projects/personalkostensaetze.html}{http://www.fwf.ac.at/de/projects/personalkostensaetze.html})
+%	\end{itemize}
+%\item Equipment costs
+%	\begin{itemize}
+%	\item     Indicate reasons for equipment costs. The ``scientific equipment'' category includes instruments, system components, costs for the use of software required by the project and other durable goods provided the cost per item (including VAT) exceeds EUR 1,500.00.
+%	\end{itemize}
+%\item Material costs
+%	\begin{itemize}
+%	\item     This category encompasses consumables and smaller pieces of equipment where the cost per item is below EUR 1,500.00 including VAT. The calculation of requested material costs should be justified with reference to the schedule, work plan and experimental plan. Experience with previous projects should be taken into account.
+%	\end{itemize}
+%\item Travel costs
+%	\begin{itemize}
+%	\item     Funding may be requested for the costs of project-specific travel and accommodation, field work, expeditions, etc. Applicants are to provide a detailed travel (cost) plan broken down by project participant. For brief stays, the calculation of the travel and accommodation costs should be based on the federal regulations governing travel costs (RGV). The RGV rates governing Austria and abroad may be found in the FAQs on the FWF Website (\href{http://www.fwf.ac.at/de/faq/reisegebuehrenvorschrift.html}{http://www.fwf.ac.at/de/faq/reisegebuehrenvorschrift.html}). For longer stays an appropriate and comprehensible cost plan should be prepared.
+%	\end{itemize}
+%\item Other costs
+%	\begin{itemize}
+%	\item     Independent contracts for work and services (costs for work of clearly defined scope and content assigned to individuals, provided that this is scientifically justifiable and economical)
+%    	\item     Costs that cannot be included under personnel, equipment, material or travel costs, such as:
+%		\begin{itemize}
+%		\item         reimbursement of costs towards or for the use of research facilities, e.g. of large-scale research facilities (project-specific 'equipment time'). Applicants should obtain and submit multiple offers;
+%		\item         costs for project-specific work carried out outside the applicant's research institution (e.g. for analysis work performed elsewhere, for interviews, for sample collection, for preparation of thin slices etc.). Applicants should obtain and submit multiple offers;
+%		\item         honoraria for test persons;
+%		\end{itemize}
+%	\end{itemize}
+%\end{itemize}
+%}
+
+
+
+\subsection{Personal costs}
+
+\begin{tabular}{| p{3cm} | p{2cm} | p{2cm} | p{2.5cm} | p{2.5cm} | l |}
+\hline
+Member & Full-time / Part-time & Position & costs per hour & Duration & Overall costs \\
+\hline
+\hline
+project manager & FT & manager & & start - end & \\
+\hline
+co-project manager &  FT & manager & & start - end  & \\
+\hline
+quality manger & FT & manager & & start - end  & \\
+\hline
+strategy memeber 4 & FT &  middle-manager & & start with version 1.0  & \\
+\hline
+strategy memeber 4 & FT &  middle-manager &  & start with version 1.0  & \\
+\hline
+reserarcher 1 &  FT  & & & start - end   & \\
+\hline
+reserarcher 2 & FT  & & & start - end  & \\
+\hline
+reserarcher 3 & PT & & & start - end  & \\
+\hline
+reserarcher 4 & PT & & & middle - end & \\
+\hline
+reserarcher 5 & PT & & & middle - end &  \\
+\hline
+security expert & FT & & & start - end &  \\ 
+\hline
+usability \& design engineer 1 + 2 & FT & & & start - end  & \\
+\hline
+web dev 1 & FT & & & dev \& update & \\
+\hline
+web dev 2 & FT & &  & dev \& update & \\
+\hline
+web dev 3 & FT & &  & dev & \\
+\hline
+web dev 4 & FT & &  & dev & \\
+\hline
+mobile dev 1 & FT & &  & dev \& update & \\
+\hline
+mobile dev 2 & FT & &  & dev \& update & \\
+\hline
+mobile dev 3 & FT & &  & dev & \\
+\hline
+mobile dev 4 & FT & &  & dev & \\
+\hline
+\end{tabular}
+
+\subsection{Equipment}
+Workplace with licenses consisting of:
+
 \begin{itemize}
-\item {\em Length: 2-3 pages}
-\item Rough estimation of cost in form of calculation (table(s)) + descriptive text.
-\item Justification for the personnel and non-personnel costs (equipment, material, travel and other costs)
-\item An Excel template is provided as supplementary material to support budgeting.
-\item Personnel costs
-	\begin{itemize}
-	\item     Justification for the personnel to be assigned to the project (type of position(s), description of nature of work, length and extent of involvement in the project)
-	\item     The application should include all persons who will be required for the proposed project (project lead, researchers, developers, advisory board, etc.). The available legal categories of employment are contracts of employment for full- or part-time employees (DV) and reimbursement for work on an hourly basis (GB). In addition, a part-time contract of employment (DV 50\%, ``studentische Mitarbeiter'') may be requested for people who have not yet completed a Master or Diploma program (Diplom) in the relevant subject.
-	 \item    The justification of the requested personnel should contain:
-		\begin{itemize}
-		\item 	        description of type of work;
-		\item 		        extent of involvement (part-time contracts are permitted).
-		\end{itemize}
-	\item Exact numbers of employment categories can be found on the FWF Website (\href{http://www.fwf.ac.at/de/projects/personalkostensaetze.html}{http://www.fwf.ac.at/de/projects/personalkostensaetze.html})
-	\end{itemize}
-\item Equipment costs
-	\begin{itemize}
-	\item     Indicate reasons for equipment costs. The ``scientific equipment'' category includes instruments, system components, costs for the use of software required by the project and other durable goods provided the cost per item (including VAT) exceeds EUR 1,500.00.
-	\end{itemize}
-\item Material costs
-	\begin{itemize}
-	\item     This category encompasses consumables and smaller pieces of equipment where the cost per item is below EUR 1,500.00 including VAT. The calculation of requested material costs should be justified with reference to the schedule, work plan and experimental plan. Experience with previous projects should be taken into account.
-	\end{itemize}
-\item Travel costs
-	\begin{itemize}
-	\item     Funding may be requested for the costs of project-specific travel and accommodation, field work, expeditions, etc. Applicants are to provide a detailed travel (cost) plan broken down by project participant. For brief stays, the calculation of the travel and accommodation costs should be based on the federal regulations governing travel costs (RGV). The RGV rates governing Austria and abroad may be found in the FAQs on the FWF Website (\href{http://www.fwf.ac.at/de/faq/reisegebuehrenvorschrift.html}{http://www.fwf.ac.at/de/faq/reisegebuehrenvorschrift.html}). For longer stays an appropriate and comprehensible cost plan should be prepared.
-	\end{itemize}
-\item Other costs
-	\begin{itemize}
-	\item     Independent contracts for work and services (costs for work of clearly defined scope and content assigned to individuals, provided that this is scientifically justifiable and economical)
-    	\item     Costs that cannot be included under personnel, equipment, material or travel costs, such as:
-		\begin{itemize}
-		\item         reimbursement of costs towards or for the use of research facilities, e.g. of large-scale research facilities (project-specific 'equipment time'). Applicants should obtain and submit multiple offers;
-		\item         costs for project-specific work carried out outside the applicant's research institution (e.g. for analysis work performed elsewhere, for interviews, for sample collection, for preparation of thin slices etc.). Applicants should obtain and submit multiple offers;
-		\item         honoraria for test persons;
-		\end{itemize}
-	\end{itemize}
+	\item {Computer}
+	\item {Maus}
+	\item {Tastatur}
+	\item {Betriebssystem}
+	\item {IDE}
+	\item {...}
 \end{itemize}
-}
+Makes around \EUR{1500} - \EUR{2000}  per employee. \\
+
+\subsection{Material}
+Once:\\
+Printer in the Office 3 $\times$ \EUR{1500} \\
+Testing devices (Android phones and iPhones) 4 $\times$ \EUR{500} \\
+Books for research and development about \EUR{500} \\
+Notebooks for managers 5 $\times$ \EUR{800} \\
+\\
+Monthly:\\
+Server \EUR{50} by renting mailserver, fileserver and repository \\
+Internet \EUR{50} \\
+\\
+
+\subsection{Travel}
+
+%hm, wieviele reisen sind nötig? 
+
+\subsection{Miscellaneous}
+
+%--miete: 500€ monatlich? keine ahnung, wo liegen die preise?
+%--strom, 
+%telefon, 
+%wasser, 
+%heizung im büro
+%werbekosten für die gewinnung dre nutzer und partner: folder und sowas
+%befragung: vorbereitung, nen ort für die durchführung, die personen die teilnehmen sollten ne kleinigkeit bekommen, auswertung
+
+\pagebreak
 
 % --------------------------------------------------------------
 \section{Expected implications and risks}
